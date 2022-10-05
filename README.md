@@ -6,13 +6,13 @@ A Javascript Challenge provided by GT Bootcamp. In essence, this project helped 
 
 ## Usage
 
-![Click on the Generate Password Button](./Screenshot1.png)
-![Pick a Number Between 8-128](./ss7.png)
-![Choose if you want lowercase letters](./Screenshot2.png)
-![Choose if you want uppercase letters](./SS3.png)
-![Choose if you want to include numbers](./SS4.png)
-![Choose if you want to include special characters](./SS5.png)
-![Enjoy your newly created secure password!](./SS6.png)
+![Click on the Generate Password Button](./images/Screenshot1.png)
+![Pick a Number Between 8-128](./images/ss7.png)
+![Choose if you want lowercase letters](./images/Screenshot2.png)
+![Choose if you want uppercase letters](./images/SS3.png)
+![Choose if you want to include numbers](./images/SS4.png)
+![Choose if you want to include special characters](./images/SS5.png)
+![Enjoy your newly created secure password!](./images/SS6.png)
 
 Live Website:
 
