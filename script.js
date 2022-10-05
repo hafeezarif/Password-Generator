@@ -48,6 +48,14 @@ function generatePassword() {
 
   console.log(characterTypes);
 
+  var yourPassword = "";
+
+  //random stuff
+  for (var i = 0; i < passwordLength; ++i) {
+    var randomCharacterType =
+      characterTypes[Math.floor(Math.random() * characterTypes.length)];
+    console.log(randomCharacterType);
+
 
 
 
