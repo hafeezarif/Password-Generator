@@ -16,5 +16,5 @@ A Javascript Challenge provided by GT Bootcamp. In essence, this project helped 
 
 Live Website:
 
-
+https://hafeezarif.github.io/Password-Generator/ 
 
