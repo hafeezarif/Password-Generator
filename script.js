@@ -9,12 +9,12 @@ function generatePassword() {
 
   //length
   var passwordLength = prompt(
-    "Choose your password length by entering a number between 8 and 128."
+    "Choose the length of your password by entering any number between 8 and 128."
   );
   if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
-    alert("You must select a number between 8 and 128. Try again.");
-    console.log("Number does not meet criteria");
-    return "Try again.";
+    alert("You must select a number between 8 and 128. Please Try again!");
+    console.log("Your number does not meet criteria");
+    return "Try again!";
   } else {
     console.log(passwordLength);
   }
@@ -22,25 +22,25 @@ function generatePassword() {
   var characterTypes = [];
 
   //other prompts (AC)
-  var lowerCase = confirm("Would you like to include lowercase characters?");
+  var lowerCase = confirm("Do you want to include lowercase characters?");
   if (lowerCase === true) {
     characterTypes.push(0);
   }
   console.log(lowerCase);
 
-  var upperCase = confirm("Would you like to include uppercase characters?");
+  var upperCase = confirm("Do you want to include uppercase characters?");
   if (upperCase === true) {
     characterTypes.push(1);
   }
   console.log(upperCase);
 
-  var numbers = confirm("Would you like to include numbers?");
+  var numbers = confirm("Do you want to include numbers?");
   if (numbers === true) {
     characterTypes.push(2);
   }
   console.log(numbers);
 
-  var special = confirm("Would you like to include special characters?");
+  var special = confirm("Do you want to include special characters?");
   if (special === true) {
     characterTypes.push(3);
   }
@@ -94,10 +94,6 @@ function generatePassword() {
 
   return yourPassword;
 }
-
-
-
-
 
 // Write password to the #password input
 function writePassword() {
