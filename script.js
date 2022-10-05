@@ -56,6 +56,45 @@ function generatePassword() {
       characterTypes[Math.floor(Math.random() * characterTypes.length)];
     console.log(randomCharacterType);
 
+    //functions for other prompts, i.e. lowercase, uppercase, special character
+    if (randomCharacterType === 0) {
+      console.log("Random lowercase");
+      var randomCharacterCode = Math.floor(Math.random() * 25) + 97;
+      console.log(randomCharacterCode);
+      var asciiCode = String.fromCharCode(randomCharacterCode);
+      console.log(asciiCode);
+      yourPassword = yourPassword.concat(asciiCode);
+    } else if (randomCharacterType === 1) {
+      console.log("Random uppercase");
+      var randomCharacterCode = Math.floor(Math.random() * 25) + 65;
+      console.log(randomCharacterCode);
+      var asciiCode = String.fromCharCode(randomCharacterCode);
+      console.log(asciiCode);
+      yourPassword = yourPassword.concat(asciiCode);
+    } else if (randomCharacterType === 2) {
+      console.log("Random number");
+      var randomCharacterCode = Math.floor(Math.random() * 9) + 48;
+      console.log(randomCharacterCode);
+      var asciiCode = String.fromCharCode(randomCharacterCode);
+      console.log(asciiCode);
+      yourPassword = yourPassword.concat(asciiCode);
+    } else if (randomCharacterType === 3) {
+      console.log("Random special character");
+      var randomCharacterCode = Math.floor(Math.random() * 14) + 33;
+      console.log(randomCharacterCode);
+      var asciiCode = String.fromCharCode(randomCharacterCode);
+      console.log(asciiCode);
+      yourPassword = yourPassword.concat(asciiCode);
+    } else {
+      alert("You must select a character type.");
+      console.log("No character type selected");
+    }
+    console.log("Your password is " + yourPassword);
+  }
+
+  return yourPassword;
+}
+
 
 
 
