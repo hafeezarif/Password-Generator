@@ -19,6 +19,35 @@ function generatePassword() {
     console.log(passwordLength);
   }
 
+  var characterTypes = [];
+
+  //other prompts (AC)
+  var lowerCase = confirm("Would you like to include lowercase characters?");
+  if (lowerCase === true) {
+    characterTypes.push(0);
+  }
+  console.log(lowerCase);
+
+  var upperCase = confirm("Would you like to include uppercase characters?");
+  if (upperCase === true) {
+    characterTypes.push(1);
+  }
+  console.log(upperCase);
+
+  var numbers = confirm("Would you like to include numbers?");
+  if (numbers === true) {
+    characterTypes.push(2);
+  }
+  console.log(numbers);
+
+  var special = confirm("Would you like to include special characters?");
+  if (special === true) {
+    characterTypes.push(3);
+  }
+  console.log(special);
+
+  console.log(characterTypes);
+
 
 
 
